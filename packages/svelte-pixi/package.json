@@ -14,7 +14,8 @@
     "dev": "node scripts/build.js",
     "prepublishOnly": "npm run build",
     "publish:prod": "npm publish --tag latest",
-    "publish:next": "npm publish --tag next"
+    "publish:next": "npm publish --tag next",
+    "postinstall": "npm run build"
   },
   "peerDependencies": {
     "pixi.js": "^6.2.0"
